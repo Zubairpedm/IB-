@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Investment Banking Courses</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a professional look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A; /* Dark blue-gray background, consistent with landing page */
+            color: #E2E8F0; /* Light gray text for contrast */
+        }
+        /* Custom button styling for a more engaging look */
+        .register-button {
+            background-image: linear-gradient(to right, #14B8A6, #0D9488); /* Teal gradient */
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+        .register-button:hover {
+            background-image: linear-gradient(to right, #0D9488, #14B8A6); /* Reverse gradient on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+            transform: translateY(-3px);
+        }
+        .form-container {
+            background-color: #1E293B; /* Slightly lighter dark blue for form container */
+            border: 1px solid #334155; /* Subtle border */
+        }
+        .input-field {
+            background-color: #0F172A; /* Darker input background */
+            border: 1px solid #475569; /* Input border */
+            color: #E2E8F0; /* Input text color */
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: #14B8A6; /* Teal border on focus */
+            box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.5); /* Teal shadow on focus */
+        }
+    </style>
+</head>
+<body class="antialiased flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-2xl p-10 rounded-3xl shadow-xl form-container">
+        <!-- Header for Registration Page -->
+        <header class="text-center mb-10">
+            <h1 class="text-5xl font-extrabold text-white mb-4">
+                Register for Your Course
+            </h1>
+            <p class="text-xl text-blue-200">
+                Please fill out the form below to complete your registration.
+            </p>
+        </header>
+
+        <!-- Registration Form -->
+        <form class="space-y-6">
+            <div>
+                <label for="fullName" class="block text-lg font-medium text-gray-300 mb-2">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="John Doe"
+                       class="input-field w-full px-5 py-3 rounded-xl focus:ring-2 focus:ring-teal-400"
+                       required>
+            </div>
+            <div>
+                <label for="email" class="block text-lg font-medium text-gray-300 mb-2">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john.doe@example.com"
+                       class="input-field w-full px-5 py-3 rounded-xl focus:ring-2 focus:ring-teal-400"
+                       required>
+            </div>
+            <div class="text-center pt-4">
+                <button type="submit" class="register-button text-white font-bold py-4 px-10 rounded-full text-2xl focus:outline-none focus:ring-4 focus:ring-teal-400 focus:ring-opacity-75">
+                    Register Now
+                </button>
+            </div>
+        </form>
+
+        <!-- Footer (Optional) -->
+        <footer class="mt-12 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Investment Banking Courses. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
