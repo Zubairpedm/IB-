@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Registering!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a professional look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A; /* Dark blue-gray background, consistent with other pages */
+            color: #E2E8F0; /* Light gray text for contrast */
+        }
+        /* Custom button styling for a more engaging look */
+        .home-button {
+            background-image: linear-gradient(to right, #14B8A6, #0D9488); /* Teal gradient */
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+        .home-button:hover {
+            background-image: linear-gradient(to right, #0D9488, #14B8A6); /* Reverse gradient on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+            transform: translateY(-3px);
+        }
+        .thank-you-container {
+            background-color: #1E293B; /* Slightly lighter dark blue for container */
+            border: 1px solid #334155; /* Subtle border */
+        }
+    </style>
+</head>
+<body class="antialiased flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-2xl p-10 rounded-3xl shadow-xl text-center thank-you-container">
+        <h1 class="text-5xl font-extrabold text-white mb-6">
+            Thank You for Registering!
+        </h1>
+        <p class="text-xl text-blue-200 mb-8 leading-relaxed">
+            Your registration has been successfully submitted. We will send a confirmation email with course details to your provided address shortly.
+        </p>
+        <div class="mt-8">
+            <a href="index.html" class="home-button inline-block text-white font-bold py-4 px-10 rounded-full text-2xl focus:outline-none focus:ring-4 focus:ring-teal-400 focus:ring-opacity-75">
+                Go to Home Page
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Investment Banking Courses. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
